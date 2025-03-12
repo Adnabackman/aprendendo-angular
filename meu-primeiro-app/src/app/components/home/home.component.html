@@ -1,0 +1,16 @@
+<p>Aprendendo a Programar com Angular {{ name }}</p>
+<button (click)="submit()">Clique</button>
+
+@if(deveMostrarTitulo){
+    <h1>Meu titulo</h1>
+} @else if(name == "Adna"){
+    <h1>Meu titulo para Adna</h1>
+}
+@else {
+    <h1>Não foi verdadeiro</h1>
+}
+
+@for (item of listItems; track item) {
+    <p>{{ item }}</p>
+}
+
